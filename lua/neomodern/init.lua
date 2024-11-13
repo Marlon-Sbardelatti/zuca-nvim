@@ -1,6 +1,6 @@
 local M = {}
 
-M.theme_list = { "iceclimber", "coffeecat", "darkforest", "roseprime", "daylight" }
+M.theme_list = { "zuca" , "iceclimber", "coffeecat", "darkforest", "roseprime", "daylight"}
 
 ---Change neomodern option (`vim.g.neomodern_config.option`)
 ---It can't be changed directly by modifying that field due to a Neovim lua bug with
