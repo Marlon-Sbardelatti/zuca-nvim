@@ -21,12 +21,36 @@
 ---@field plus string diff mod
 
 ---@class Colorscheme
+---@field zuca Theme
 ---@field iceclimber Theme
 ---@field coffeecat Theme
 ---@field darkforest Theme
 ---@field roseprime Theme
 ---@field daylight Theme
 local M = {}
+
+M.zuca= {
+  alt = "#abbceb",
+  bg = "#141414",
+  builtin = "#e89bce",
+  comment = "#555568",
+  constant = "#dbbc8a",
+  fg = "#bbbac1",
+  float = "#1c1c1c",
+  func = "#86a3f0",
+  keyword = "#8a88db",
+  line = "#1d1d22",
+  operator = "#9b99a3",
+  property = "#559ba3",
+  string = "#7da77e",
+  type = "#e3a462",
+  visual = "#2a2a31",
+  error = "#e67e80",
+  hint = "#8da0d6",
+  warning = "#ad9368",
+  delta = "#8da0d6",
+  plus = "#7da77e",
+}
 
 M.iceclimber = {
   alt = "#abbceb",
@@ -165,6 +189,19 @@ M.daylight = {
 }
 
 M.colormap = {
+  zuca = {
+    black = "#2d2d2f",
+    grey = M.iceclimber.comment,
+    red = M.iceclimber.error,
+    orange = M.iceclimber.type,
+    green = M.iceclimber.string,
+    yellow = M.iceclimber.string,
+    blue = M.iceclimber.func,
+    purple = M.iceclimber.keyword,
+    magenta = M.iceclimber.builtin,
+    cyan = M.iceclimber.property,
+    white = M.iceclimber.fg,
+  },
   iceclimber = {
     black = "#2d2d2f",
     grey = M.iceclimber.comment,
